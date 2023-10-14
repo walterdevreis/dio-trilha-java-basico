@@ -8,7 +8,10 @@ public class ContaTerminal {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         //TODO: Criando os atributos da conta
- 
+        int numero;
+        String agencia;
+        String nomeCliente;
+        double saldo;
 
         //Exibir as mensagens para o nosso usuário
 
