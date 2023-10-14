@@ -8,20 +8,26 @@ public class ContaTerminal {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US);
 
         //TODO: Criando os atributos da conta
-        System.out.print("Por favor, isira os dados do novo Cliente: ");
-        int numero = Integer.valueOf(args[0]);
+        int numero;
+        String agencia;
+        String nomeCliente;
+        double saldo;
+
+        //TODO: Exibir as mensagens para o nosso usuário, e obter pela scanner os valores digitados no terminal
+        System.out.print("Por favor, digite o número da conta do novo Cliente: ");
+        numero = sc.nextInt();
+        sc.nextLine();
         System.out.print("Por favor, digite o número da Agência! ");
-        String agencia = args[1];
+        agencia = sc.nextLine();
         System.out.print("Por favor, digite o nome do cliente! ");
-        String nomeCliente = args[2];
+        nomeCliente = sc.nextLine();
         System.out.print("Por favor, digite o saldo inicial da conta! ");
-        double saldo = Double.valueOf(args[3]);
+        saldo = sc.nextDouble();
 
-        //Exibir as mensagens para o nosso usuário
+        System.out.println();
 
+        //TODO: Exibir os dados da Conta para o usuário
+        System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta "+ numero + " e seu saldo " + saldo + " já está disponível para saque.");
 
-        //Obter pela scanner os valores digitados no terminal
-
-        //Exibir a mensagem conta criada
     }
 }
